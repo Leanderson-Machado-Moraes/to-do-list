@@ -1,0 +1,216 @@
+body {
+    background: rgb(213, 157, 215);
+    background: linear-gradient(90deg, rgba(213, 157, 215, 1) 9%, rgba(255, 255, 255, 0.577468487394958) 50%, rgba(131, 223, 217, 1) 68%, rgba(161, 227, 237, 1) 90%, rgba(91, 170, 186, 1) 100%);
+    color: black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.conteudo {
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: white;
+    border: 2px solid black;
+    box-shadow: 10px 5px 10px 5px purple;
+    padding: 55px;
+    border-radius: 35px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.topo input {
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    outline: none;
+    font-size: 1.2rem;
+    background: palegoldenrod;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.topo button {
+    width: 45px;
+    border-radius: 15px 2px 15px 2px;
+    border: 1px solid black;
+    background: rgb(226, 123, 141);
+    color: black;
+    outline: none;
+    background-image: url(../img/create.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.topo button:hover {
+    background: plum;
+    cursor: pointer;
+    background-image: url(../img/create.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#listaTarefas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+#listaTarefas li {
+    padding: 20px;
+    background: palegoldenrod;
+    border-radius: 45px 5px 45px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border: 2px solid black;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btnAcao {
+    border-radius: 20px;
+    border: 2px solid #191818;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: rgb(226, 123, 141);
+    color: white;
+    outline: none;
+}
+
+.btnAcao:hover {
+    background: plum;
+}
+
+.textoTarefa {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+
+}
+
+#janelaEdicao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: rgb(213, 157, 215);
+    background: linear-gradient(90deg, rgba(213, 157, 215, 1) 9%, rgba(255, 255, 255, 0.577468487394958) 50%, rgba(131, 223, 217, 1) 68%, rgba(161, 227, 237, 1) 90%, rgba(91, 170, 186, 1) 100%);
+    border: 2px solid black;
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+
+}
+
+#janelaEdicao.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoFundo {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+#janelaEdicaoFundo.abrir {
+    display: block !important;
+
+}
+
+#janelaEdicaoBtnFechar {
+    position: absolute;
+    top: -25px;
+    right: -18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: palegoldenrod;
+    color: black;
+    outline: none;
+
+
+}
+
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.frm-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.frm-linha label {
+    margin-bottom: 7px;
+    font-size: 18pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.frm-linha input {
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: 2px solid purple;
+    font-size: 1.2rem;
+    background: palegoldenrod;
+    text-align: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.frm-linha button {
+    background: palegoldenrod;
+    border: 2px solid purple;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 120px 2px 120px 2px;
+    color: black;
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.3rem;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22pt;
+}
+
+.frm-linha button:hover {
+    background: pink;
+    color: black;
+}
+
+h1 {
+    margin: 5px;
+    text-align: center;
+    font-family: 'Square Peg', cursive;
+    font-size: 50pt;
+    text-shadow: 5px 3px palevioletred;
+
+}
